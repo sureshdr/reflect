@@ -22,7 +22,7 @@ namespace reflect
                 Assembly.GetExecutingAssembly().GetName().Version.ToString());
             Console.WriteLine("Copyright @ Dr. Suresh Ramasamy <suresh@drsuresh.net> 2017\n");
             
-            if (string.IsNullOrEmpty(args[0]))
+            if (args == null || args.Length==0)
             {
                 Console.WriteLine("No .NET binaries to reflect");
             }
